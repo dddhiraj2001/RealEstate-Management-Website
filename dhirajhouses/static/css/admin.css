@@ -1,0 +1,27 @@
+#header {
+    height: 50px;
+    background: #3516b0;
+    color: aliceblue;
+}
+
+#branding h1{
+    color: azure;
+}
+
+a:link,
+a:visited{
+    color: white;
+}
+
+div.breadcrumbs{
+    background: green;
+    color: white;
+}
+
+div.breadcrumbs a{
+    color: #333;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: green;
+}
