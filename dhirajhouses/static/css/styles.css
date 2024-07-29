@@ -7,6 +7,9 @@ img {
 .logo {
   width: 50px; }
 
+
+
+
 .navbar {
   opacity: 0.9;
   text-transform: uppercase; }
@@ -14,17 +17,22 @@ img {
 .social a {
   margin-right: 0.4rem; }
 
-#showcase {
-  background: url(../img/showcase.jpg) no-repeat top center fixed/cover;
-  position: relative;
-  min-height: 800px;
-  color: #fff;
-  padding-top: 6rem; }
-  #showcase .home-search {
+  #showcase {
+    background: url(../img/showcases.jpg) no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire container */
+    position: relative;
+    min-height: 100vh; /* Ensures full viewport height */
+    color: #fff;
+    padding-top: 6rem; /* Adjust padding as needed */
+  }
   
+  
+  #showcase .home-search {
     min-height: 400px;
     position: relative;
-    border-radius: 5px; }
+    border-radius: 5px;
+  }
+  
   #showcase .overlay {
     content: '';
     position: absolute;
@@ -32,8 +40,9 @@ img {
     left: 0;
     min-height: 400px;
     width: 100%;
-    background: rgba(51, 51, 51, 0.8); }
-
+    background: rgba(51, 51, 51, 0.8);
+  }
+  
 #services {
   background: url(../img/building.jpg) no-repeat top center fixed/cover;
   min-height: 300px;
@@ -52,7 +61,9 @@ img {
   background: url(../img/building.jpg) no-repeat top center fixed/cover;
   position: relative;
   overflow: hidden;
-  min-height: 200px; }
+  min-height: 200px; 
+  width: 100%;
+}
   #showcase-inner::before {
     content: '';
     position: absolute;
@@ -60,7 +71,7 @@ img {
     left: 0;
     min-height: 100%;
     width: 100%;
-    background: rgba(32, 134, 107, 0.8); }
+    background: rgba(33, 150, 120, 0.8); }
   #showcase-inner.showcase-search {
     min-height: 270px; }
 
@@ -95,3 +106,33 @@ img {
     font-size: 30px; }
   #showcase-inner h1 {
     font-size: 40px; } }
+
+    .footer {
+      position: fixed; /* Stays at the bottom of the viewport */
+      bottom: 0; /* Aligns the footer at the bottom */
+      left: 0; /* Ensures the footer starts from the left edge */
+      width: 100%; /* Makes sure the footer spans the full width */
+      z-index: 10; /* Keeps it on top of other content if necessary */
+      color: #fff; /* Text color */
+      text-align: center; /* Center align text */
+  }
+
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 10px; /* Padding around map */
+}
+
+/* Map styling */
+#map {
+    height: 800px;
+    width: 800px;
+    border: 2px solid #333; /* Dark grey border around map */
+}
+
+
+
+  
+    
